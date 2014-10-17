@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>/Users/led/Code/erlang/foo/apps/foo_api/.eunit/foo_api_app.COVER.html</title>
+</head><body style='background-color: white; color: black'>
+<pre>
+File generated from /Users/led/Code/erlang/foo/apps/foo_api/.eunit/foo_api_app.erl by COVER 2014-10-16 at 22:05:59
+
+****************************************************************************
+
+        |  -module(foo_api_app).
+        |  
+        |  -behaviour(application).
+        |  
+        |  %% Application callbacks
+        |  -export([start/2, stop/1]).
+        |  
+        |  %% ===================================================================
+        |  %% Application callbacks
+        |  %% ===================================================================
+        |  
+        |  start(_StartType, _StartArgs) -&gt;
+<font color=red>     0..|      foo_api_sup:start_link().</font>
+        |  
+        |  stop(_State) -&gt;
+<font color=red>     0..|      ok.</font>
+        |  
+        |  % Test
+        |  
+        |  -include_lib("eunit/include/eunit.hrl").
+        |  
+        |  foo_test_() -&gt;
+     2..|    [
+        |      {"This is it",
+        |        fun() -&gt;
+     1..|          false = 1 + 1
+        |        end},
+        |      {"This works",
+        |        fun() -&gt;
+     1..|          2 = 1 + 1
+        |        end}
+        |    ].
+</pre>
+</body>
+</html>
